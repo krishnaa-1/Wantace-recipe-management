@@ -25,7 +25,7 @@ The Recipe Management System is a web-based application that allows users to cre
    ```
 2. Navigate to the project directory:
    ```sh
-   cd recipe-management
+   cd recipe-management/backend and cd recipe-management/frontend
    ```
 3. Install dependencies:
    ```sh
@@ -34,10 +34,15 @@ The Recipe Management System is a web-based application that allows users to cre
 4. Set up environment variables:
    - Create a `.env` file in the root directory
    - Add the following variables:
+   - for backend
      ```env
      MONGO_URI=your_mongodb_connection_string
      JWT_SECRET=your_secret_key
      PORT=4000
+     ```
+      - for frontend
+     ```env
+     VITE_REACT_APP_API_URL= http://localhost:5000
      ```
 5. Start the server:
    ```sh
