@@ -7,7 +7,7 @@ The Recipe Management System is a web-based application that allows users to cre
 - User authentication & authorization
 - Create, read, update, and delete (CRUD) recipes
 - Categorization of recipes
-- Search and filter functionality
+- Drag and Drop for Categorixation(User-friendly)
 - Image upload for recipes
 - User-friendly dashboard for recipe management
 
