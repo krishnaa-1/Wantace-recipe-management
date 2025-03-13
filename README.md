@@ -21,7 +21,7 @@ The Recipe Management System is a web-based application that allows users to cre
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/recipe-management.git
+   git clone https://github.com/krishnaa-1/Wantace-recipe-management.git
    ```
 2. Navigate to the project directory:
    ```sh
