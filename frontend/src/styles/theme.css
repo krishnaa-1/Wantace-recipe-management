@@ -1,0 +1,46 @@
+:root {
+    --primary: #fc8019;
+    --secondary: #282c3f;
+    --bg-light: #f5f5f5;
+    --text-dark: #333;
+    --shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-light);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .card.dragging {
+    background: #fc8019;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  button {
+    background: var(--primary);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

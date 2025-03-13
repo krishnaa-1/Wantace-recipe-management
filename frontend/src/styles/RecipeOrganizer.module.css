@@ -1,0 +1,176 @@
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 categories per row */
+    gap: 20px;
+    padding: 20px;
+    align-items: start; /* Ensures cards align at the top */
+  }
+  
+  .category {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Prevents stretching */
+    min-height: 265px;
+  }
+  
+  
+  .card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: grab;
+  }
+
+ 
+  .card.dragging {
+    background: #fc8019;
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+  .card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    cursor: grab;
+  }
+  
+  .card:active {
+    opacity: 1;
+    border: 1px solid black;
+  }
+  
+  .card.dragging {
+    background: #fc8019;
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+    cursor: grabbing;
+  }
+  
+  h3{
+    font-size: 1.8rem;
+  }
+  .addCategoryButton {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 200px;
+    margin-top: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+  
+  .addCategoryButton:hover {
+    background-color: #e04e2a;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .inputField {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modalButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .cancelButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  
+  .cancelButton:hover {
+    background-color: #c82333;
+  }
+  
+  .categoryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #000000;
+    transition: color 0.2s;
+  }
+  
+  .icon:hover {
+    color: #000;
+  }
+  

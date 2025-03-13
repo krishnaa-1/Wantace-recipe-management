@@ -1,0 +1,157 @@
+/* RecipeList.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+.recipe-list {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 0%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.recipes-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.recipes-container::-webkit-scrollbar-thumb {
+  background: #ff8c00;
+  border-radius: 10px;
+}
+
+.surprise-btn {
+  background: linear-gradient(135deg, #ff8c00, #ff3d00);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.surprise-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 61, 0, 0.8);
+}
+
+.random-recipe {
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 300px;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recipes-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  width: 80%;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 60%;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background-color: #ff3d00;
+}
+
+.left-arrow {
+  position: absolute;
+  left: -50px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: -50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3px;
+  margin-top: -12px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.surprise-btn {
+  background: linear-gradient(135deg, #ff8c00, #ff3d00);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.surprise-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 61, 0, 0.8);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
