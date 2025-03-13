@@ -13,9 +13,10 @@ const app = express();
 
 // Enable CORS for all origins
 app.use(cors({
-    origin: "*",  // Allows all origins
-    methods: ["GET", "POST", "PUT", "DELETE"],  // Allows specific methods
-    allowedHeaders: ["Content-Type", "Authorization"],  // Allows specific headers
+    origin: "https://wantace-recipe-management-m1gz.vercel.app", // Your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,  // If using cookies or authentication headers
 }));
 
 app.use(express.json());
