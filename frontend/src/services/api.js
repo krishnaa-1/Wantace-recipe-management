@@ -33,6 +33,15 @@ export const deleteCategory = async (id) => {
     console.error("Error deleting category:", error);
   }
 };
+ 
+export const deleteRecipe = async (id) => {
+  try {
+    await axios.delete(`${API_URL}/recipes/${id}`);
+  } catch (error) {
+    console.error("Error deleting recipe:", error);
+  }
+};
+
 
 // Add a new recipe with image upload
 export const addRecipe = async (recipeData) => {

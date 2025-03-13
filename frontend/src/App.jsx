@@ -21,12 +21,15 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
+        {/* Redirect root route to /auth */}
+        <Route path="/" element={<Navigate to="/auth" />} />
+        
         {/* Public Routes */}
-        <Route path="/recipeList" element={<ProtectedRoute element={<RecipeList />} />} />
         <Route path="/auth" element={<AuthForm />} />
-        <Route path="/recipe/:id" element={<ProtectedRoute element={<RecipeDetails />} />} />
-
+        
         {/* Protected Routes */}
+        <Route path="/recipeList" element={<ProtectedRoute element={<RecipeList />} />} />
+        <Route path="/recipe/:id" element={<ProtectedRoute element={<RecipeDetails />} />} />
         <Route path="/add" element={<ProtectedRoute element={<AddRecipe />} />} />
         <Route path="/organizer" element={<ProtectedRoute element={<RecipeOrganizer />} />} />
 

@@ -27,6 +27,7 @@ const Navbar = () => {
     return (
         <nav>
             {/* Left Side - Logo and Name */}
+            <Link to="/recipeList">
             <div className="nav-left">
                 <img
                     src="https://png.pngtree.com/png-clipart/20240618/original/pngtree-restaurant-logo-vector-png-image_15358604.png"
@@ -35,7 +36,7 @@ const Navbar = () => {
                 />
                 <h1 className="site-name">Recipe Hub</h1>
             </div>
-
+            </Link>
             {/* Center - Navigation Links */}
             <div className="nav-links">
                 <Link to="/recipeList">
