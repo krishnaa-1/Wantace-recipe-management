@@ -4,6 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;
+  overflow-x: hidden;
+}
+
 
 nav {
   background: linear-gradient(90deg, #fc8019, #ff9e50);
