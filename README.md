@@ -46,7 +46,7 @@ The Recipe Management System is a web-based application that allows users to cre
      ```
 5. Start the server:
    ```sh
-   npm start
+   npm run dev
    ```
 6. Access the application at `http://localhost:4000`
 
