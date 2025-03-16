@@ -199,7 +199,7 @@ The Recipe Management System is a web-based application that allows users to cre
 ```
 
 ## Tech Stack
-- **Frontend:** React.js
+- **Frontend:** React.js(Vite)
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Authentication:** JWT
